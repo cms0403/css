@@ -7,36 +7,38 @@
     <title>Document</title>
 
     <style>
-        body{background-image: url('img/bg_grid.jpg'); }
-        p{
-            width: 600px;
-            height: 100px;
-            border: 1px solid #777;
-            background-color: aqua;
-
-            /* margin: 30px; 상하좌우 */
-
-            /* margin: 10px 20px 10px 20px; 위, 오른쪽, 아래, 왼 (시계방향) */
-            /* margin: 30px 10px; 위아래 좌우 */
+        body {background-image : url('img/big_grid.jpg');}
+        p {
+            width : 600px;
+            height : 100px;
+            border : 1px solid #777;
+            background-color : aqua;
+            /*  margin : 30px; */ /* 상하좌우 */
+            /* margin : 10px 20px 10px 20px; */ /* 위, 오른쪽, 아래, 왼쪽(시계방향) */
+            /* margin : 30px 10 px; */ /* 위아래, 좌우 */
+            margin-top : 30px;
+            margin-bottom : 30px;
+            margin-left : 10px;
+            margin-right : 10px;
+        }
+        /* 많이 사용되는 상자 중앙정렬(조건 : 상자의 width가 반드시 지정) */
+        .box {
+            margin : 0 auto; /* 위아래, 좌우 */
         }
     </style>
 
-
-
 </head>
 <body>
-
-    <p>
-        마진이란? 마진은 상자 바깥 여백입니다.
-    </p>
-
-    <p>
-        마진이란? 마진은 상자 바깥 여백입니다.
-    </p>
-
-
-
-
     
+    <p>
+        마진이란?
+        마진은 상자 바깥 여백이다(마진은 겹친다)
+    </p>
+
+    <p class="box">
+        마진이란?
+        마진은 상자 바깥 여백이다
+    </p>
+
 </body>
 </html>

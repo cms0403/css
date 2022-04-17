@@ -7,51 +7,84 @@
     <title>Document</title>
 
     <style>
-        *{padding: 0; margin: 0; list-style: none;}
-
-        .wrap {width: 1020px; margin: 0 auto;}
-        .content {overflow: hidden;}
-        .list-wrap {width:480px; float: left; border: 1px solid #777;}
-        .slide-wrap {width: 236px; float: left; border: 1px solid #777; height: 310px;}
-        .user-wrap {width: 280px; float: left; border: 1px solid #777; height: 310px; }
-        
-        .list-wrap ul{overflow: hidden;}
-        .list-wrap ul li{float: left; width: 33.3333%; height: 155px; border: 1px solid #777; box-sizing: border-box;}
-
-
-        .login-wrap {height: 155px; padding: 0 15px; padding-top: 30px; box-sizing: border-box;}
-        .login-wrap .top-area {overflow: hidden; }
-        .login-wrap .top-area .left {float: left; font-size: small; color: #999;}
-        .login-wrap .top-area .right {float: right; font-size: small; color: #999;}
-
-        .login-wrap > button {border: none; width: 100%; background-color: #00d344; color: #fff; padding: 10px 10px; margin-top: 25px;}
-
-
+        *{padding : 0; margin : 0; list-style : none;}
+        .wrap {
+            width : 1020px; 
+            margin : 0 auto;
+        }
+        .content {overflow : hidden;}
+        .list-wrap {
+            width : 480px; 
+            float : left; 
+            border : 1px solid #777;
+        }
+        .slide-wrap {
+            width : 236px; 
+            float : left; 
+            border : 1px solid #777; 
+            height : 310px;
+            margin-left : 8px;
+        }
+        .user-wrap {
+            width : 280px; 
+            float : left; 
+            border : 1px solid #777; 
+            height : 310px;
+            margin-left : 8px;
+        }
+        .list-wrap ul {overflow : hidden;}
+        .list-wrap ul li {
+            float : left; 
+            width : 33.3333%; 
+            height : 155px; 
+            border : 1px solid #777; 
+            box-sizing : border-box;
+        }
+        .login-wrap {
+            height : 155px;
+            padding : 0 15px;
+            padding-top : 30px;
+            box-sizing : border-box;
+        }
+        .login-wrap .top-area {
+            overflow : hidden; 
+            font-size : 12px; 
+            color : #999;
+        } 
+        .login-wrap .top-area .left{float : left;}
+        .login-wrap .top-area .right{float : right;}
+        .login-wrap > button {
+            width : 100%; 
+            background-color : #00d344; 
+            border : none; 
+            color : #fff; 
+            padding : 10px 10px;
+            margin-top : 10px;
+        }
     </style>
 
-
-
-</head> 
+</head>
 <body>
     
     <section>
         <div class="wrap">
             
         <div class="content">
-            <div class="list-wrap"><!-- 왼 -->
+            <div class="list-wrap"> <!-- 왼쪽 -->
                 <ul>
-                    <li >사진</li>
-                    <li >사진</li>
-                    <li >사진</li>
-                    <li >사진</li>
-                    <li >사진</li>
-                    <li >사진</li>
+                    <li>사진</li>
+                    <li>사진</li>
+                    <li>사진</li>
+                    <li>사진</li>
+                    <li>사진</li>
+                    <li>사진</li>
                 </ul>
             </div>
-            <div class="slide-wrap"><!-- 가운데 -->
+            <div class="slide-wrap"> <!-- 가운데 -->
                 이미지....
+                <img src="">
             </div>
-            <div class="user-wrap"><!-- 오른쪽 -->
+            <div class="user-wrap"> <!-- 오른쪽 -->
                 <div class="login-wrap">
                     <div class="top-area">
                         <p class="left">멜론을 더 안전하게 이용하세요</p>

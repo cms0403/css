@@ -7,37 +7,26 @@
     <title>Document</title>
 
     <style>
-        .list {width: 500px; margin: 0 auto;}
-        .top, .mid, .bottom {border:1px solid #777;}
-
-        /* 위아래, 좌우 */
-        .mid {padding: 20px 0;}
-
-        .inner {overflow: hidden;}
-        .inner .left {
-            float: left; 
-            width:250px;
-            border: 1px solid #777;
-            box-sizing: border-box;
-        
-        }
+        .list {width : 500px; margin : 0 auto;}
+        .top, .mid, .bottom {border : 1px solid #777;}
+        .mid {padding : 20px 0;} /* 위아래 좌우 */
+        .inner {overflow : hidden;}
+        .inner .left {float : left; width : 50%; border : 1px solid #777; box-sizing : border-box;}
     </style>
+
 </head>
 <body>
-
-    <div class="list">
+    
+    <div class="list"> 
         <div class="top">탑</div>
         <div class="mid">
-            <div class="inner">
-                <div class="left">왼쪽</div>
-                <div class="right">왼쪽</div>
-            </div>
+         <div class="inner">
+             <div class="left">왼쪽</div>
+             <div class="left">왼쪽</div>
+         </div>   
         </div>
-
         <div class="bottom">아래</div>
     </div>
 
-
-    
 </body>
 </html>

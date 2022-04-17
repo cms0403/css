@@ -7,59 +7,53 @@
     <title>Document</title>
 
     <style>
-        .list{
-            overflow: hidden;
-            width: 800px;
-            border: 1px solid #777;
-            margin: 0 auto; /* 가운데로 간다 */
-        
+       .list {
+           overflow : hidden;
+           width : 800px;
+           border : 1px solid #777;
+           margin : 0 auto;
         }
-        .list .left {
-            float: left;
-            width: 50%;
-            /* border: 1px solid #777; 보더 넓이때문에 오른쪽이사라짐 */
-            box-sizing: border-box; /*그래서 이거써야함*/
+       .list .left {
+           float : left;
+           width : 50%;
+           /* border : 1px solid #777; */
+           box-sizing : border-box;
         }
-
-        .title > p {margin: 0;} /* p태그에 기본 마진 지워버리기*/
-        .title > .bot {margin-bottom: 30px;}
-
+        .title > p {margin : 0;}
+        .title > .bot {margin-bottom : 30px;}
         .content .price,
         .content .order {
-            overflow: hidden;
+            overflow : hidden;
         }
-
-        .content .p-left {float: left;}
-        .content .p-right {float: right;}
-        .order > button {width: 50%;}
-
-
-
+        .content .p-left {float : left;}
+        .content .p-right {float : right;}
+        .order > button {width : 50%;}
     </style>
+
 </head>
 <body>
-
+  
     <div class="list">
-        <div class="left">
+        <div class="left"> <!-- 이미지 -->
             이미지영역
         </div>
-        <div class="left">
-            <div class="title">
-                <p>제목: 패딩 바텀 50px;</p>
-                <p class="bot">내용: 내용영역</p>
+        <div class="left"> <!-- 오른쪽 -->
+            <div class="title"> <!-- 위 상자 -->
+                <p>제목 : 패딩바텀 50px</p>
+                <p class="bot">내용 : 내용 영역</p>
             </div>
-            <div class="content">
+            <div class="content"> <!-- 아래 상자  -->
                 <div class="price">
                     <div class="p-left">가격</div>
                     <div class="p-right">10000원</div>
                 </div>
-                <div class="order">
+                <div class="order"> 
                     <button class="p-left">장바구니</button>
                     <button class="p-right">구매하기</button>
                 </div>
             </div>
         </div>
     </div>
-    
+
 </body>
 </html>
